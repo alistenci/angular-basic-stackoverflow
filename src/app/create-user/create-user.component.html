@@ -1,0 +1,70 @@
+<!-- <div class="d-flex justify-content-center mt-5">
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-header text-center" style="font-size: 25px;">Login Sayfası</div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="">Mail Adresi</label>
+                    <input class="form-control" type="email">
+                </div>
+            </form>
+            <div class="form-group mt-2">
+                <label for="">Şifre</label>
+                <input class="form-control" type="password">
+            </div>
+            <div class="form-group mt-3">
+                <button class="btn btn-outline-primary w-100">Giriş Yap</button>
+                <a class="mt-1" routerLink="" style="float: right;">Hesap Oluştur</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div> -->
+
+
+<div class="container">
+    <div class="form-container">
+        <div class="title">Hesap Oluştur</div>
+        <form [formGroup]="createUserForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Emailinizi Giriniz</mat-label>
+                <input matInput formControlName="email"/>
+                <mat-error>
+                    <p *ngIf="f['email'].errors && f['email'].errors['required']">Email Zorunludur</p>
+                    <p *ngIf="f['email'].errors && f['email'].errors['email']">Email formatını doğru giriniz</p>
+                </mat-error>
+  
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="mt-4">
+                <mat-label>Kullanıcı Adınızı Giriniz</mat-label>
+                <input matInput formControlName="username"/>
+                <mat-error>
+                    <p *ngIf="f['username'].errors && f['username'].errors['required']">Kullanıcı Adı Zorunludur</p>
+                    <p *ngIf="f['username'].errors && f['username'].errors['minlength']">Kullanıcı Adı en az 6 karakterden oluşmalı</p>
+                    <p *ngIf="f['username'].errors && f['username'].errors['maxlength']">Kullanıcı Adı en fazla 15 karakterden oluşmalı</p>
+                </mat-error>
+  
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="mt-4">
+                <mat-label>Şifrenizi Giriniz</mat-label>
+                <input type="password" matInput formControlName="password"/>
+                <mat-error>
+                    <p *ngIf="f['password'].errors && f['password'].errors['required']">Şifre Zorunludur</p>
+                    <p *ngIf="f['password'].errors && f['password'].errors['minlength']">Şifre en az 8 karakter uzunluğunda olmalı</p>
+                </mat-error>
+  
+            </mat-form-field>
+        </form>
+        <div class="buttons-container mt-4">
+            <button [disabled]="createUserForm.invalid" mat-raised-button class="login-button" (click)="createAccount()">
+                Kaydol
+            </button>
+            <p>Veya</p>
+            <button mat-button routerLink="/login">Giriş Yap</button>
+        </div>
+    </div>
+  </div>
+  {{createUserForm.value| json}}
+  

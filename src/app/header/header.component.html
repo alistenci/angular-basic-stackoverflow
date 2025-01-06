@@ -1,0 +1,6 @@
+<mat-toolbar class="bg-primary text-white headerContainer">
+    <div>Stackoverflow</div>
+    <div>
+        <button *ngIf="userService.user != undefined" class="text-white bg-danger" mat-button (click)="logOut()">Çıkış Yap</button>
+    </div>
+</mat-toolbar>
