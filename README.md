@@ -1,9 +1,9 @@
-## StackOverflow Uygulaması
+# StackOverflow Uygulaması
 Bu proje, Angular ve JSON Server kullanılarak geliştirilmiş basit bir StackOverflow uygulamasıdır. Uygulama, kullanıcıların kayıt olmasını, giriş yapmasını, soru sormasını ve diğer kullanıcıların bu sorulara cevap yazmasını sağlar.
 
 # Özellikler
-Kullanıcı Kaydı: Yeni kullanıcılar sisteme kayıt olabilir.
-Giriş Yapma: Kayıtlı kullanıcılar kullanıcı adı ve şifre ile giriş yapabilir.
+## Kullanıcı Kaydı: Yeni kullanıcılar sisteme kayıt olabilir.
+### Giriş Yapma: Kayıtlı kullanıcılar kullanıcı adı ve şifre ile giriş yapabilir.
 Soru Sorma: Kullanıcılar sisteme giriş yaptıktan sonra soru sorabilir.
 Cevap Yazma: Sorulara cevap ekleyerek diğer kullanıcılara katkıda bulunabilirler.
 JSON Server: Basit bir backend simülasyonu için JSON Server kullanılmıştır.
