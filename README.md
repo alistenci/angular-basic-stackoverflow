@@ -1,3 +1,5 @@
+
+
 # StackOverflow Uygulaması
 Bu proje, Angular ve JSON Server kullanılarak geliştirilmiş basit bir StackOverflow uygulamasıdır. Uygulama, kullanıcıların kayıt olmasını, giriş yapmasını, soru sormasını ve diğer kullanıcıların bu sorulara cevap yazmasını sağlar.
 
@@ -20,6 +22,6 @@ ng serve -o
 ##  JSON Server’ı Çalıştırın
 npx json-server api/db.json
 
-### Stackoverflow
+### Versiyon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+18.1.0.
