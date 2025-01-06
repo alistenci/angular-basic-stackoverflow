@@ -12,6 +12,9 @@ Bu proje, Angular ve JSON Server kullanılarak geliştirilmiş basit bir StackOv
 <p>Frontend: Angular</p>
 <p>Backend: JSON Server</p>
 
+# Kurulum
+## Projeyi Klonlayın
+git clone https://github.com/kullaniciadi/stackoverflow-uygulamasi.git
 ## Angular Uygulamasını Başlatın
 ng serve -o
 ##  JSON Server’ı Çalıştırın
