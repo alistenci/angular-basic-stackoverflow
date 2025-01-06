@@ -4,12 +4,13 @@ Bu proje, Angular ve JSON Server kullanılarak geliştirilmiş basit bir StackOv
 ## Özellikler
 <p>Kullanıcı Kaydı: Yeni kullanıcılar sisteme kayıt olabilir.</p>
 <p>Giriş Yapma: Kayıtlı kullanıcılar kullanıcı adı ve şifre ile giriş yapabilir.</p>
-Soru Sorma: Kullanıcılar sisteme giriş yaptıktan sonra soru sorabilir.
-Cevap Yazma: Sorulara cevap ekleyerek diğer kullanıcılara katkıda bulunabilirler.
-JSON Server: Basit bir backend simülasyonu için JSON Server kullanılmıştır.
-Kullanılan Teknolojiler
-Frontend: Angular
-Backend: JSON Server
+<p>Soru Sorma: Kullanıcılar sisteme giriş yaptıktan sonra soru sorabilir.</p>
+<p>Cevap Yazma: Sorulara cevap ekleyerek diğer kullanıcılara katkıda bulunabilirler.</p>
+<p>JSON Server: Basit bir backend simülasyonu için JSON Server kullanılmıştır.</p>
+
+### Kullanılan Teknolojiler
+<p>Frontend: Angular</p>
+<p>Backend: JSON Server</p>
 
 ## Angular Uygulamasını Başlatın
 ng serve -o
